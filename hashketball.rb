@@ -158,5 +158,26 @@ def winning_team
 end
 
 def player_with_the_longest_name
-
+  name_len_arr = []
+  max_score = 0
+  high_score_player = ""
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          name_len_arr << player[:points]
+        end
+      end
+    end
+  end
+  max_score = name_len_arr.max
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          return player[:player_name] if player[:points] == max_score
+        end
+      end
+    end
+  end
 end
