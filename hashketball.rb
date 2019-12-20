@@ -132,12 +132,13 @@ def most_points_scored
 end
 
 def winning_team
+  new_hash = {}
 # people.select{|x| x[:job_title] == "developer"}.map{|y| y[:salary].to_i}.reduce(:+)
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-        
+          # if !new_hash[]
         end
       end
     end
