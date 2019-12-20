@@ -151,7 +151,9 @@ def winning_team
   end
   winning_score = final_scores.max
   new_hash.each do |k,v|
-    
+    if v == winning_score
+      return k
+    end
   end
   binding.pry
 end
