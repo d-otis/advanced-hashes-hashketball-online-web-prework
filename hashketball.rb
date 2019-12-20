@@ -138,7 +138,9 @@ def winning_team
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          # if !new_hash[]
+          if !new_hash[team[:team_name]]
+            new_hash[team[:team_name]] = 0
+          end
           binding.pry
         end
       end
