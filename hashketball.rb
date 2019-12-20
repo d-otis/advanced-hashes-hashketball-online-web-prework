@@ -160,7 +160,6 @@ end
 def player_with_the_longest_name
   name_len_arr = []
   longest_name_len = 0
-  high_score_player = ""
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
