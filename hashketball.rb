@@ -137,6 +137,7 @@ def winning_team
     team.each do |attribute, data|
       if attribute == :players
         data.reduce do |player|
+          binding.pry
         end
       end
     end
