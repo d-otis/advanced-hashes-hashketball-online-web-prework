@@ -89,9 +89,7 @@ def big_shoe_rebounds
       if attribute == :players
         data.each do |player|
           size_arr << player[:shoe]
-          # binding.pry
         end
-        # binding.pry
       end
     end
     team.each do |attribute, data|
@@ -151,7 +149,7 @@ def winning_team
     final_scores << v
   end
   new_hash.each do |k,v|
-  
+    
   end
   binding.pry
 end
