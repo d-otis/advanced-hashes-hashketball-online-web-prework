@@ -141,7 +141,7 @@ def winning_team
           if !new_hash[team[:team_name]]
             new_hash[team[:team_name]] = 0
           end
-          
+          new_hash[team[:team_name]] += player[]
         end
       end
     end
