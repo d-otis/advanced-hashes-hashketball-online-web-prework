@@ -156,3 +156,7 @@ def winning_team
     end
   end
 end
+
+def player_with_the_longest_name
+
+end
