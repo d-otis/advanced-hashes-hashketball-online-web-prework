@@ -182,11 +182,12 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
+  steals_arr = []
   name = player_with_longest_name
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :player
-      
+        
       end
     end
   end
