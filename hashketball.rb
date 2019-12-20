@@ -144,9 +144,7 @@ def winning_team
           new_hash[team[:team_name]] += player[:points]
         end
       end
-      
     end
-    binding.pry
   end
   # binding.pry
 end
