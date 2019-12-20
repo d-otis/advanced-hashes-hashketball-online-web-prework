@@ -200,7 +200,7 @@ def long_name_steals_a_ton?
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          return player[:player_name] if player[:steals] == max_steals
+          return true if player[:steals] == max_steals && player[:player_name] == name
         end
       end
     end
