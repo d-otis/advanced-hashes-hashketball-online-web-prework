@@ -184,7 +184,7 @@ end
 def long_name_steals_a_ton?
   name = player_with_longest_name
   steals_arr = []
-  max_score = 0
+  max_steals = 0
   high_score_player = ""
   game_hash.each do |place, team|
     team.each do |attribute, data|
@@ -195,12 +195,12 @@ def long_name_steals_a_ton?
       end
     end
   end
-  max_score = steals_arr.max
+  max_steals = steals_arr.max
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          return player[:player_name] if player[:points] == max_score
+          return player[:player_name] if player[:points] == max_steals
         end
       end
     end
