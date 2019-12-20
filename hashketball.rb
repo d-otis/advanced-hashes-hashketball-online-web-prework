@@ -145,9 +145,11 @@ def winning_team
     end
   end
   final_scores = []
+  winning_score = 0
   new_hash.each do |k,v|
     final_scores << v
   end
+  winning_score = final_scores.max
   new_hash.each do |k,v|
     
   end
