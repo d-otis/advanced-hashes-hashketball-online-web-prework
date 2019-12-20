@@ -188,6 +188,7 @@ def long_name_steals_a_ton?
     team.each do |attribute, data|
       if attribute == :player
         data.each do |player|
+          binding.pry
           steals_arr << player[:steals]
         end
       end
