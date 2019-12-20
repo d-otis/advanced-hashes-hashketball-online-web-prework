@@ -150,4 +150,5 @@ def winning_team
   new_hash.each do |k,v|
     final_scores << v
   end
+  binding.pry
 end
