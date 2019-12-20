@@ -136,9 +136,8 @@ def winning_team
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :players
-        data.reduce(:+) do |player|
-          player[:points]
-          binding.pry
+        data.each do |player|
+        
         end
       end
     end
