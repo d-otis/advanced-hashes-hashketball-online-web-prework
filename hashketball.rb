@@ -146,5 +146,7 @@ def winning_team
       end
     end
   end
-  
+  new_hash.each do |k,v|
+    binding.pry
+  end
 end
