@@ -187,7 +187,9 @@ def long_name_steals_a_ton?
   game_hash.each do |place, team|
     team.each do |attribute, data|
       if attribute == :player
-        
+        data.each do |player|
+          steals_arr << player[:steals]
+        end
       end
     end
   end
