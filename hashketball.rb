@@ -146,7 +146,8 @@ def winning_team
       end
     end
   end
+  final_scores = []
   new_hash.each do |k,v|
-    binding.pry
+    final_scores << v
   end
 end
